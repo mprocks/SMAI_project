@@ -6,7 +6,7 @@ from torch.autograd import Variable
 # Model for the character-based CNN
 class Model(nn.Module):
 
-	def __init__(self, n_classes, pool_size = 3, n_chars = 70, channel_size = channel_size, kernel = [7, 7, 3, 3, 3, 3], max_len):
+	def __init__(self, n_classes, pool_size = 3, n_chars = 70, channel_size = 256, kernel = [7, 7, 3, 3, 3, 3], max_len = 1014):
 		
 		super(Model, self).__init__()
 	
@@ -20,7 +20,7 @@ class Model(nn.Module):
 		self.conv6 = nn.Conv1d(channel_size, channel_size, kernel[5])
 		self.pool3 = nn.MaxPool1d(pool_size)
 		
-		final_layer_len = (max_len - 96) / 27
+		self.final_layer_len = int((max_len - 96) / 27)
 		self.FC1 = nn.Linear(channel_size * self.final_layer_len, 1024)
 		self.FC2 = nn.Linear(1024, 1024)
 		self.final_layer = nn.Linear(1024, n_classes)
@@ -29,7 +29,8 @@ class Model(nn.Module):
 
 		#initialisation
 		for module in self.modules():
-			module.weight.data.normal_(0, 0.05)
+			if isinstance(module, nn.Conv1d):
+				module.weight.data.normal_(0, 0.05)
 
 	def forward(self, x):
 		x = self.conv1(x)
@@ -47,5 +48,5 @@ class Model(nn.Module):
 		x = self.FC2(x)
 		x = self.dropout2(x)
 		x = self.final_layer(x)
-		x = F.log_softmax(x)
+		x = F.softmax(x)
 		return x		
