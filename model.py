@@ -48,5 +48,5 @@ class Model(nn.Module):
 		x = self.FC2(x)
 		x = self.dropout2(x)
 		x = self.final_layer(x)
-		x = F.softmax(x)
+		# x = F.softmax(x)
 		return x		

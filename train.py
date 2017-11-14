@@ -13,9 +13,6 @@ import pickle
 def load_yelp(alphabet):
     examples = []
     labels = []
-    filename = sys.argv[1]
-    # testf = open('test.json', "w")
-    # trainf = open('train.json', "w")
     filename = "../dataset/train.json"
     with open(filename) as f:
         i = 0
@@ -34,23 +31,9 @@ def load_yelp(alphabet):
                     labels.append([0, 1])
                     examples.append(text_int8_repr)
                 i += 1
-                # if i % 20 == 0:
-                #     return examples, labels
-                #     print("Non-neutral instances processed: " + str(i))
-                #     # print(text_int8_repr)
-                #     # print(padded)
-                #     # print(labels[i-1])
-                if i%10000 == 0:
+                if i%100000 == 0:
                     print(i)
                     return examples, labels
-                # if i < 600000:
-                #     trainf.write(line)
-                # elif i < 670000:
-                #     testf.write(line)
-                # else:
-                #     return examples, labels
-    # trainf.close()
-    # testf.close()
     return examples, labels
 
 
@@ -95,37 +78,26 @@ def load_data():
     return [x, y]
 
 
-def batch_iter(x, y, batch_size = 128, num_epochs = 100, shuffle=True):
+def batch_iter(x, y, batch_size = 128, num_epochs = 100, shuffle=False):
 
     net = model.Model(2).cuda()
-    # net.load_state_dict(torch.load('train180.pt'))
+    # net.load_state_dict(torch.load('train_backup_small3.pt'))
     loss = torch.nn.CrossEntropyLoss().cuda()
-    optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+    learning_rate = 10**(-3)
+    optimizer = optim.Adam(net.parameters(), lr=learning_rate)
     # print("TEST")
     data_size = len(x)
     num_batches = int(data_size/batch_size)
     count = 0
-    f = str('train_backup.pt')
     for epoch in range(num_epochs):
         st = time.time()
         print("\n\n\n\n\nIn epoch >> " + str(epoch + 1))
         print("num batches per epoch is: " + str(num_batches))
-        # Shuffle the data at each epoch
-        if shuffle:
-            shuffle_indices = np.random.permutation(np.arange(data_size))
-            x_shuffled = x[shuffle_indices]
-            y_shuffled = y[shuffle_indices]
-        else:
-            x_shuffled = x
-            y_shuffled = y
-
         final_loss = 0
         for batch_num in range(num_batches):
-            if batch_num%100 == 0:
-                print("Batch Number : " + str(batch_num))
             start_index = batch_num * batch_size
             end_index = min((batch_num + 1) * batch_size, data_size)
-            x_batch, y_batch = get_batched_one_hot(x_shuffled, y_shuffled, start_index, end_index)
+            x_batch, y_batch = get_batched_one_hot(x, y, start_index, end_index)
             batch = torch.FloatTensor(x_batch).view(len(x_batch), 70, 1014).cuda()
             batch = autograd.Variable(batch)
 
@@ -142,13 +114,20 @@ def batch_iter(x, y, batch_size = 128, num_epochs = 100, shuffle=True):
             optimizer.step()
             count = count + 1
             final_loss += output.data[0]
+
+            if batch_num%10 == 0:
+                print("Batch Number : " + str(batch_num))
+                print("Loss : ", final_loss/(batch_num+1))
+
+            if((batch_num+1)%(int(num_batches/2)) == 0):
+                optimizer = optim.Adam(net.parameters(), lr=learning_rate)
+                learning_rate /= 2
+                print("Learning rate : ", learning_rate)
+
         print("Time per epoch = " + str(time.time() - st))
         print("Loss after epoch " + str(epoch) + " = " + str(final_loss/num_batches))
+        f = str('train_backup_small_again' + str(epoch) + '.pt')
         torch.save(net.state_dict(), f)
-            # print("\n\n\n SAVED!!\n\n\n")
-            # print(str(net.state_dict()))
-# 'train' + str(epoch) + '.pt'
-            # net.save_state_dict('train' + str(epoch) + '.pt')
 
 [x,y] = load_data()
 cudnn.benchmark = True
