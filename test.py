@@ -115,8 +115,6 @@ def batch_iter(x, y, batch_size = 10, num_epochs = 100, shuffle=False):
     net = model.Model(2).cuda()
     net.load_state_dict(torch.load('train_backup_small3.pt'))
     # loss = torch.nn.CrossEntropyLoss().cuda()
-    # optimizer = optim.Adam(net.parameters(), lr=0.001)
-    # print("TEST")
     data_size = len(x)
     num_batches = int(data_size/batch_size)
     count = 0
@@ -141,18 +139,13 @@ def batch_iter(x, y, batch_size = 10, num_epochs = 100, shuffle=False):
         batch = torch.FloatTensor(x_batch).view(len(x_batch), 70, 1014).cuda()
         batch = autograd.Variable(batch)
 
-        # optimizer.zero_grad()
-
         out = net.forward(batch).cuda()
         _, pred = out.max(1)
         pred = pred.data
         pred = pred.cpu()
         pred = pred.numpy()
-        # print(pred)
         target = y_batch[:,1]
         target = np.float32(target)
-        # print(target)
-        # target = torch.FloatTensor(target).cuda()
         for i in range(len(target)):
             if target[i] == pred[i]:
                 ncorrect += 1
