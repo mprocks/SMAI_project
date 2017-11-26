@@ -5,12 +5,12 @@
 #### Team Number: 
 17
 #### Project: 
-Project number: 25 - To classify text using deep character-based Convolutional Neural Networks
+Project number: 25 - Text classification using deep character-based Convolutional Neural Networks
 
 #### Members:
 * Eashwar Subramanian (201501163)
 * Pranav Kamojjhala (201501213)
-* Rishab Arora (201501010)
+* Rishabh Arora (201501010)
 * Saurabh Ravindranath (201501159)
 
 ## Models
@@ -30,7 +30,7 @@ The packages required to run the code are:
 * The pytoch package, which can be installed using the instructions from: http://pytorch.org/
 * The numpy package
 
-## Running the code
+## Usage
 
 The following commands are used to run the codes:
 
