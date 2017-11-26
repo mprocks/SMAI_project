@@ -1,0 +1,13 @@
+Batch Number : 0
+0.9375
+Batch Number : 100
+0.9583075495049505
+Batch Number : 200
+0.9647465796019901
+Batch Number : 300
+0.9661025747508306
+Batch Number : 400
+0.9702306733167082
+Batch Number : 500
+0.9720402944111777
+Number of Correct Predictions :  67952

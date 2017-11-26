@@ -1,0 +1,9 @@
+The Weights for the following that have been trained are uploaded:
+
+1. 6-CNN model for Yelp Polarity dataset: https://drive.google.com/open?id=1gyU333d2UqvtaFZ7sCnmsJkKWuP9ELl2
+
+2. 6-CNN model for DBPedia Ontology dataset: https://drive.google.com/open?id=1mV4Lujesu7tUleeXuaG7GGcNri_K4dCa
+
+3. 29-CNN model for Yelp Polarity dataset: https://drive.google.com/open?id=1F8F13BKQuBVsabWLdIAGiC_x09NhDP0y
+
+4. 54-CNN model for Yelp Polarity dataset: https://drive.google.com/open?id=1zqX5Vf1uM5ckSblq7tN5s86EU-m8JzG5

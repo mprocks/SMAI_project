@@ -1,0 +1,5 @@
+The following are the datasets that have been used:
+
+1. The Yelp Polarity dataset. Link: https://drive.google.com/open?id=1d0TeJIaEUW3om7Nlp2PrQYZeOswkYWzE
+
+2. The DBPedia Ontolody dataset (2014). Link: https://drive.google.com/open?id=15CxfoWJ4K10ypOYdgR4EXXa_Xt1rLb7c
