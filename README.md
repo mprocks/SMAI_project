@@ -29,7 +29,7 @@ The following commands are used to run the codes:
 * Training on Yelp Polarity Dataset: python3 yelp_train.py <Model to be used: (cnn6, cnn29, cnn54)> \<path to dataset>
 * Testing on Yelp Polarity Dataset: python3 yelp_test.py <Model to be used: (cnn6, cnn29, cnn54)> \<path to dataset> \<path to weights file>
 * Training on DBPedia Ontology Dataset: python3 dbpedia_train.py <Model to be used: (cnn6, cnn29, cnn54)> \<path to dataset>
-* Testing on DBPedia Ontology Dataset: python3 yelp_train.py <Model to be used: (cnn6, cnn29, cnn54)> \<path to dataset> \<path to weights file>
+* Testing on DBPedia Ontology Dataset: python3 dbpedia_test.py <Model to be used: (cnn6, cnn29, cnn54)> \<path to dataset> \<path to weights file>
 
 ## Trained Models
 
