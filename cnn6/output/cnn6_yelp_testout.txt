@@ -1,0 +1,24 @@
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+x_char_seq_ind=(70000, 1014)
+y shape=(70000, 2)
+Batch Number : 0
+0.96875
+Batch Number : 100
+0.9429919554455446
+Batch Number : 200
+0.9444574004975125
+Batch Number : 300
+0.9458056478405316
+Batch Number : 400
+0.944942331670823
+Batch Number : 500
+0.945624376247505
+Number of Correct Predictions :  66068
+Number of False Positives :  2137
+Number of False Negatives :  1683

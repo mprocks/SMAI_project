@@ -1,0 +1,374 @@
+Batch Number : 0
+Loss : 0.7095006108283997
+Batch Number : 100
+Loss : 0.6890561872779732
+Batch Number : 200
+Loss : 0.5750735353178053
+Batch Number : 300
+Loss : 0.4951316242499209
+Batch Number : 400
+Loss : 0.4447225992221785
+Batch Number : 500
+Loss : 0.4079031365776728
+Batch Number : 600
+Loss : 0.3795475059261735
+Batch Number : 700
+Loss : 0.35863446751436734
+Batch Number : 800
+Loss : 0.34240546281194867
+Batch Number : 900
+Loss : 0.3291342353797647
+Batch Number : 1000
+Loss : 0.3181544100413551
+Batch Number : 1100
+Loss : 0.3083218673039414
+Batch Number : 1200
+Loss : 0.29851239505258825
+Batch Number : 1300
+Loss : 0.29022988461696764
+Batch Number : 1400
+Loss : 0.28345975640371474
+Batch Number : 1500
+Loss : 0.2768242507825527
+Learning rate : 0.0005
+Loss after epoch 0 = 0.2728371282517147
+Batch Number : 0
+Loss : 0.21116940677165985
+Batch Number : 100
+Loss : 0.18519075900906384
+Batch Number : 200
+Loss : 0.17848665219041246
+Batch Number : 300
+Loss : 0.17499744706474665
+Batch Number : 400
+Loss : 0.1718955962103501
+Batch Number : 500
+Loss : 0.17112158457497637
+Batch Number : 600
+Loss : 0.16924567195817755
+Batch Number : 700
+Loss : 0.16805654302898385
+Batch Number : 800
+Loss : 0.16803211720658004
+Batch Number : 900
+Loss : 0.16662042422610832
+Batch Number : 1000
+Loss : 0.16585290444629652
+Batch Number : 1100
+Loss : 0.16547352526265854
+Batch Number : 1200
+Loss : 0.16424138920938441
+Batch Number : 1300
+Loss : 0.1627863198461485
+Batch Number : 1400
+Loss : 0.1619476037130536
+Batch Number : 1500
+Loss : 0.16072040555538294
+Learning rate : 0.00025
+Loss after epoch 1 = 0.16000044949724793
+Batch Number : 0
+Loss : 0.18699079751968384
+Batch Number : 100
+Loss : 0.14479564886429522
+Batch Number : 200
+Loss : 0.13732017461785037
+Batch Number : 300
+Loss : 0.13550818983799595
+Batch Number : 400
+Loss : 0.13321195140555314
+Batch Number : 500
+Loss : 0.13173110893892195
+Batch Number : 600
+Loss : 0.13027007176777883
+Batch Number : 700
+Loss : 0.12990714477298093
+Batch Number : 800
+Loss : 0.13035614074634552
+Batch Number : 900
+Loss : 0.12998861771130668
+Batch Number : 1000
+Loss : 0.12919904656343525
+Batch Number : 1100
+Loss : 0.12882528400943563
+Batch Number : 1200
+Loss : 0.1277956678117195
+Batch Number : 1300
+Loss : 0.12684548548283162
+Batch Number : 1400
+Loss : 0.12618349609015075
+Batch Number : 1500
+Loss : 0.12501160837685085
+Learning rate : 0.000125
+Loss after epoch 2 = 0.1243927033782654
+Batch Number : 0
+Loss : 0.11771289259195328
+Batch Number : 100
+Loss : 0.12431825169979936
+Batch Number : 200
+Loss : 0.11650404930856098
+Batch Number : 300
+Loss : 0.11456241110878133
+Batch Number : 400
+Loss : 0.11213903418019823
+Batch Number : 500
+Loss : 0.11015000444894542
+Batch Number : 600
+Loss : 0.10874695381375894
+Batch Number : 700
+Loss : 0.10814558415170147
+Batch Number : 800
+Loss : 0.10781989730987582
+Batch Number : 900
+Loss : 0.10672836587014924
+Batch Number : 1000
+Loss : 0.1061308840280408
+Batch Number : 1100
+Loss : 0.10541667809183765
+Batch Number : 1200
+Loss : 0.10460513566995193
+Batch Number : 1300
+Loss : 0.10357620225049595
+Batch Number : 1400
+Loss : 0.10278206875814998
+Batch Number : 1500
+Loss : 0.10149764824040645
+Learning rate : 6.25e-05
+Loss after epoch 3 = 0.10081648888130805
+Batch Number : 0
+Loss : 0.08597331494092941
+Batch Number : 100
+Loss : 0.10853799781070488
+Batch Number : 200
+Loss : 0.09975534496801113
+Batch Number : 300
+Loss : 0.09892966561762004
+Batch Number : 400
+Loss : 0.09706325356168045
+Batch Number : 500
+Loss : 0.09484018630416927
+Batch Number : 600
+Loss : 0.09330305216923827
+Batch Number : 700
+Loss : 0.09306159774678495
+Batch Number : 800
+Loss : 0.09251402762396431
+Batch Number : 900
+Loss : 0.09110363786182181
+Batch Number : 1000
+Loss : 0.09024181628560686
+Batch Number : 1100
+Loss : 0.08945713374597933
+Batch Number : 1200
+Loss : 0.08851988782034528
+Batch Number : 1300
+Loss : 0.08750276041892197
+Batch Number : 1400
+Loss : 0.08675162833606788
+Batch Number : 1500
+Loss : 0.08531500997554156
+Learning rate : 3.125e-05
+Loss after epoch 4 = 0.08453511899318093
+Batch Number : 0
+Loss : 0.06890015304088593
+Batch Number : 100
+Loss : 0.102845496322849
+Batch Number : 200
+Loss : 0.09291146990301004
+Batch Number : 300
+Loss : 0.09061125604021193
+Batch Number : 400
+Loss : 0.08862671741467908
+Batch Number : 500
+Loss : 0.08634342803078854
+Batch Number : 600
+Loss : 0.08516879477995307
+Batch Number : 700
+Loss : 0.08473393922079137
+Batch Number : 800
+Loss : 0.08371621286136083
+Batch Number : 900
+Loss : 0.08206069137028664
+Batch Number : 1000
+Loss : 0.08089071865771319
+Batch Number : 1100
+Loss : 0.07985708725170912
+Batch Number : 1200
+Loss : 0.07877628695681926
+Batch Number : 1300
+Loss : 0.07746901206362944
+Batch Number : 1400
+Loss : 0.0765354869492368
+Batch Number : 1500
+Loss : 0.0749916189159704
+Learning rate : 1.5625e-05
+Loss after epoch 5 = 0.0740284437168194
+Batch Number : 0
+Loss : 0.06253400444984436
+Batch Number : 100
+Loss : 0.09996781081403835
+Batch Number : 200
+Loss : 0.08991639506516617
+Batch Number : 300
+Loss : 0.08674883144749855
+Batch Number : 400
+Loss : 0.08414246902064863
+Batch Number : 500
+Loss : 0.08173783356416785
+Batch Number : 600
+Loss : 0.08037278967477171
+Batch Number : 700
+Loss : 0.0797937706965799
+Batch Number : 800
+Loss : 0.07854654654493083
+Batch Number : 900
+Loss : 0.07683535075573857
+Batch Number : 1000
+Loss : 0.0754262718384142
+Batch Number : 1100
+Loss : 0.07424329390426206
+Batch Number : 1200
+Loss : 0.07308202622525029
+Batch Number : 1300
+Loss : 0.07162635507553151
+Batch Number : 1400
+Loss : 0.0704754382966194
+Batch Number : 1500
+Loss : 0.0688152333459681
+Learning rate : 7.8125e-06
+Loss after epoch 6 = 0.06793871143637237
+Batch Number : 0
+Loss : 0.04285440966486931
+Batch Number : 100
+Loss : 0.09447543480719375
+Batch Number : 200
+Loss : 0.08557343140559558
+Batch Number : 300
+Loss : 0.08289268361002305
+Batch Number : 400
+Loss : 0.08072718875738154
+Batch Number : 500
+Loss : 0.07837384950719074
+Batch Number : 600
+Loss : 0.07698612649942099
+Batch Number : 700
+Loss : 0.07640347423061154
+Batch Number : 800
+Loss : 0.07523888090716097
+Batch Number : 900
+Loss : 0.07347553323429247
+Batch Number : 1000
+Loss : 0.07201003019868225
+Batch Number : 1100
+Loss : 0.07081960081516153
+Batch Number : 1200
+Loss : 0.0695919964174049
+Batch Number : 1300
+Loss : 0.06819579882230853
+Batch Number : 1400
+Loss : 0.0669124858124151
+Batch Number : 1500
+Loss : 0.06524677310997669
+Learning rate : 3.90625e-06
+Loss after epoch 7 = 0.06438919019655213
+Batch Number : 0
+Loss : 0.03053480200469494
+Batch Number : 100
+Loss : 0.0899451569386638
+Batch Number : 200
+Loss : 0.08234469353948808
+Batch Number : 300
+Loss : 0.08002609183758101
+Batch Number : 400
+Loss : 0.07843769035601705
+Batch Number : 500
+Loss : 0.07592771703492619
+Batch Number : 600
+Loss : 0.0744276665733777
+Batch Number : 700
+Loss : 0.0740813907028605
+Batch Number : 800
+Loss : 0.07276162409575915
+Batch Number : 900
+Loss : 0.0710401869958864
+Batch Number : 1000
+Loss : 0.06955559352332806
+Batch Number : 1100
+Loss : 0.0683392969769621
+Batch Number : 1200
+Loss : 0.06702359786937997
+Batch Number : 1300
+Loss : 0.06563142653723619
+Batch Number : 1400
+Loss : 0.06438187257899271
+Batch Number : 1500
+Loss : 0.06279379313378573
+Learning rate : 1.953125e-06
+Loss after epoch 8 = 0.06193682698296829
+Batch Number : 0
+Loss : 0.03411787748336792
+Batch Number : 100
+Loss : 0.08701044479661649
+Batch Number : 200
+Loss : 0.08023095033618051
+Batch Number : 300
+Loss : 0.07825181990911398
+Batch Number : 400
+Loss : 0.07642547714935054
+Batch Number : 500
+Loss : 0.07419363524348377
+Batch Number : 600
+Loss : 0.07284750907330119
+Batch Number : 700
+Loss : 0.0725851002270183
+Batch Number : 800
+Loss : 0.07144819056678019
+Batch Number : 900
+Loss : 0.06975262375294203
+Batch Number : 1000
+Loss : 0.06824911515006087
+Batch Number : 1100
+Loss : 0.06707371075761984
+Batch Number : 1200
+Loss : 0.06593066755741164
+Batch Number : 1300
+Loss : 0.06467474282480816
+Batch Number : 1400
+Loss : 0.06344874354968809
+Batch Number : 1500
+Loss : 0.06187486046829635
+Learning rate : 9.765625e-07
+Loss after epoch 9 = 0.061077745041062295
+Batch Number : 0
+Loss : 0.031467732042074203
+Batch Number : 100
+Loss : 0.08371121731429997
+Batch Number : 200
+Loss : 0.07797533030441003
+Batch Number : 300
+Loss : 0.07647416779950905
+Batch Number : 400
+Loss : 0.07516717221913047
+Batch Number : 500
+Loss : 0.07301777991616798
+Batch Number : 600
+Loss : 0.07192564658361941
+Batch Number : 700
+Loss : 0.07168124199243057
+Batch Number : 800
+Loss : 0.07045637101479126
+Batch Number : 900
+Loss : 0.06879634721996418
+Batch Number : 1000
+Loss : 0.0673561651068
+Batch Number : 1100
+Loss : 0.0662177669114478
+Batch Number : 1200
+Loss : 0.0650683647521045
+Batch Number : 1300
+Loss : 0.06376283810181195
+Batch Number : 1400
+Loss : 0.06254212866849043
+Batch Number : 1500
+Loss : 0.06103009162414856
+Learning rate : 4.8828125e-07
+Loss after epoch 10 = 0.06021242477500599
